@@ -1,9 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".activities.ContinentsActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_continents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary"
+            android:minHeight="?attr/actionBarSize"
+            android:theme="?attr/actionBarTheme"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:id="@+id/text_view_continents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Continentes"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/toolbar_continents" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view_continents"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:overScrollMode="never"
+            android:padding="10dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_continents"
+            app:spanCount="2"
+            tools:itemCount="2"
+            tools:listitem="@layout/item_continent" />
+
+        <TextView
+            android:id="@+id/text_view_radio_buttons_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Que deseas ver en la siguiente pantalla?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radio_group_natural_destinations"
+            app:layout_constraintStart_toStartOf="@+id/radio_group_natural_destinations"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view_continents" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_natural_destinations"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/recycler_view_continents"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_radio_buttons_title">
+
+            <RadioButton
+                android:id="@+id/radio_button_rivers"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:checked="true"
+                android:text="Rios" />
+
+            <RadioButton
+                android:id="@+id/radio_button_lakes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Lagos" />
+
+            <RadioButton
+                android:id="@+id/radio_button_volcanoes"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Volcanes" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/text_view_filter_selection"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Como deseas filtrar las capitales en la siguiente pantalla?"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/radio_group_natural_destinations"
+            app:layout_constraintStart_toStartOf="@+id/radio_group_natural_destinations"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_natural_destinations" />
+
+        <Spinner
+            android:id="@+id/spinner_filter_capitals"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:entries="@array/spinner_selection"
+            app:layout_constraintEnd_toEndOf="@+id/text_view_filter_selection"
+            app:layout_constraintStart_toStartOf="@+id/text_view_filter_selection"
+            app:layout_constraintTop_toBottomOf="@+id/text_view_filter_selection" />
+
+        <Button
+            android:id="@+id/button_continue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Continuar"
+            app:layout_constraintEnd_toEndOf="@+id/spinner_filter_capitals"
+            app:layout_constraintStart_toStartOf="@+id/spinner_filter_capitals"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_filter_capitals" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
