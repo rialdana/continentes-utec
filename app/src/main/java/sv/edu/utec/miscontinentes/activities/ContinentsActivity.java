@@ -139,34 +139,31 @@ public class ContinentsActivity extends AppCompatActivity implements ContinentsL
         america.setImage("https://www.turismonuevayork.com/wp-content/uploads/2014/09/La-Estatua-de-la-Libertad-en-Nueva-York-760x500.jpg");
 
         List<Country> americaCountries = new ArrayList<>();
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
-        americaCountries.add(new Country("El Salvador", "San Salvador"));
+        americaCountries.add(new Country("ARGENTINA", "BUENOS AIRES"));
+        americaCountries.add(new Country("BAHAMAS", "NASSAU"));
+        americaCountries.add(new Country("BARBADOS", "BRIDGETOWN"));
+        americaCountries.add(new Country("BELICE", "BELMOPÁN"));
+        americaCountries.add(new Country("BOLIVIA", "SUCRE, LA PAZ"));
+        americaCountries.add(new Country("BRASIL", "BRASILIA"));
+        americaCountries.add(new Country("CANADÁ", "OTTAWA"));
 
         List<NaturalDestination> americaRivers = new ArrayList<>();
-        americaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        americaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        americaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        americaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        americaRivers.add(new NaturalDestination("Lempa", "n/a"));
+        americaRivers.add(new NaturalDestination("Misisipi", "n/a"));
+        americaRivers.add(new NaturalDestination("Grande", "n/a"));
+        americaRivers.add(new NaturalDestination("Amazonas", "n/a"));
+        americaRivers.add(new NaturalDestination("San Francisco", "n/a"));
 
         List<NaturalDestination> americaLakes = new ArrayList<>();
-        americaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        americaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        americaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        americaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        americaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
+        americaLakes.add(new NaturalDestination("Superior", "n/a"));
+        americaLakes.add(new NaturalDestination("Míchigan", "n/a"));
+        americaLakes.add(new NaturalDestination("Nicaragua", "n/a"));
+        americaLakes.add(new NaturalDestination("Titicaca", "n/a"));
 
         List<NaturalDestination> americaVolcanoes = new ArrayList<>();
-        americaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        americaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        americaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        americaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        americaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
+        americaVolcanoes.add(new NaturalDestination("Kilauea", "n/a"));
+        americaVolcanoes.add(new NaturalDestination("Monte Pelée", "n/a"));
+        americaVolcanoes.add(new NaturalDestination("Nevado del Ruiz", "n/a"));
+        americaVolcanoes.add(new NaturalDestination("Popocatépetl", "n/a"));
 
         america.setCountries(americaCountries);
         america.setRivers(americaRivers);
@@ -181,34 +178,31 @@ public class ContinentsActivity extends AppCompatActivity implements ContinentsL
         europa.setImage("https://www.toureiffel.paris/sites/default/files/actualite/image_principale/IMG_20200526_123909.jpg");
 
         List<Country> europaCountries = new ArrayList<>();
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
-        europaCountries.add(new Country("El Salvador", "San Salvador"));
+        europaCountries.add(new Country("ALBANIA", "TIRANA"));
+        europaCountries.add(new Country("ALEMANIA", "BERLÍN"));
+        europaCountries.add(new Country("ANDORRA", "ANDORRA LA VIEJA"));
+        europaCountries.add(new Country("ARMENIA", "EREVÁN"));
+        europaCountries.add(new Country("AUSTRIA", "VIENA"));
+        europaCountries.add(new Country("AZERBAIYÁN", "BAKÚ"));
+        europaCountries.add(new Country("BÉLGICA","BRUSELAS"));
 
         List<NaturalDestination> europaRivers = new ArrayList<>();
-        europaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        europaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        europaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        europaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        europaRivers.add(new NaturalDestination("Lempa", "n/a"));
+        europaRivers.add(new NaturalDestination("Danubio", "n/a"));
+        europaRivers.add(new NaturalDestination("Rin", "n/a"));
+        europaRivers.add(new NaturalDestination("Sena", "n/a"));
+        europaRivers.add(new NaturalDestination("Támesis", "n/a"));
 
         List<NaturalDestination> europaLakes = new ArrayList<>();
-        europaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        europaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        europaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        europaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        europaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
+        europaLakes.add(new NaturalDestination("Ládoga", "n/a"));
+        europaLakes.add(new NaturalDestination("Vänern", "n/a"));
+        europaLakes.add(new NaturalDestination("Peipus", "n/a"));
+        europaLakes.add(new NaturalDestination("Simaa", "n/a"));
 
         List<NaturalDestination> europaVolcanoes = new ArrayList<>();
-        europaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        europaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        europaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        europaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        europaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
+        europaVolcanoes.add(new NaturalDestination("El Pitón de la Fournaise", "n/a"));
+        europaVolcanoes.add(new NaturalDestination("Etna", "n/a"));
+        europaVolcanoes.add(new NaturalDestination("Eyjafjallajökull", "n/a"));
+        europaVolcanoes.add(new NaturalDestination("Heimaey", "n/a"));
 
         europa.setCountries(europaCountries);
         europa.setRivers(europaRivers);
@@ -223,34 +217,31 @@ public class ContinentsActivity extends AppCompatActivity implements ContinentsL
         africa.setImage("https://cdn2.wanderlust.co.uk/media/1061/dreamstime_xxl_80975530.jpg?anchor=center&mode=crop&width=1200&height=0&rnd=132030046790000000");
 
         List<Country> africaCountries = new ArrayList<>();
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
-        africaCountries.add(new Country("El Salvador", "San Salvador"));
+        africaCountries.add(new Country("ANGOLA", "LUANDA"));
+        africaCountries.add(new Country("ARGELIA", "ARGEL"));
+        africaCountries.add(new Country("BENIN", "PORTO-NOVO"));
+        africaCountries.add(new Country("BOTSUANA", "GABERONES"));
+        africaCountries.add(new Country("BURKINA FASO", "UAGADUGÚ"));
+        africaCountries.add(new Country("BURUNDI", "BUYUMBURA"));
+        africaCountries.add(new Country("CABO VERDE", "PRAIA"));
 
         List<NaturalDestination> africaRivers = new ArrayList<>();
-        africaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        africaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        africaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        africaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        africaRivers.add(new NaturalDestination("Lempa", "n/a"));
+        africaRivers.add(new NaturalDestination("Nilo", "n/a"));
+        africaRivers.add(new NaturalDestination("Congo", "n/a"));
+        africaRivers.add(new NaturalDestination("Níger", "n/a"));
+        africaRivers.add(new NaturalDestination("Zambeze", "n/a"));
 
         List<NaturalDestination> africaLakes = new ArrayList<>();
-        africaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        africaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        africaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        africaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        africaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
+        africaLakes.add(new NaturalDestination("Victoria", "n/a"));
+        africaLakes.add(new NaturalDestination("Tanganica", "n/a"));
+        africaLakes.add(new NaturalDestination("Malaui", "n/a"));
+        africaLakes.add(new NaturalDestination("Chad", "n/a"));
 
         List<NaturalDestination> africaVolcanoes = new ArrayList<>();
-        africaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        africaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        africaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        africaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        africaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
+        africaVolcanoes.add(new NaturalDestination("Camerún", "n/a"));
+        africaVolcanoes.add(new NaturalDestination("Emi Koussi", "n/a"));
+        africaVolcanoes.add(new NaturalDestination("Kilimanjaro", "n/a"));
+        africaVolcanoes.add(new NaturalDestination("Nyiragongo", "n/a"));
 
         africa.setCountries(africaCountries);
         africa.setRivers(africaRivers);
@@ -265,34 +256,31 @@ public class ContinentsActivity extends AppCompatActivity implements ContinentsL
         asia.setImage("https://blogs.griffith.edu.au/asiainsights/wp-content/uploads/sites/2/2018/11/cities-900x500-1000x0-c-default.jpg");
 
         List<Country> asiaCountries = new ArrayList<>();
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
-        asiaCountries.add(new Country("El Salvador", "San Salvador"));
+        asiaCountries.add(new Country("AFGANISTÁN","KABUL"));
+        asiaCountries.add(new Country("ARABIA SAUDITA", "RIAD"));
+        asiaCountries.add(new Country("BARÉIN", "MANAMÁ"));
+        asiaCountries.add(new Country("BANGLADÉS", "DACA"));
+        asiaCountries.add(new Country("BRUNEI", "BANDAR SERI BEGAWAN"));
+        asiaCountries.add(new Country("BUTÁN", "TIMBU"));
+        asiaCountries.add(new Country("CAMBOYA", "PNON PEHN"));
 
         List<NaturalDestination> asiaRivers = new ArrayList<>();
-        asiaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        asiaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        asiaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        asiaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        asiaRivers.add(new NaturalDestination("Lempa", "n/a"));
+        asiaRivers.add(new NaturalDestination("Ganges", "n/a"));
+        asiaRivers.add(new NaturalDestination("Eufrates", "n/a"));
+        asiaRivers.add(new NaturalDestination("Obi", "n/a"));
+        asiaRivers.add(new NaturalDestination("Brahmputra", "n/a"));
 
         List<NaturalDestination> asiaLakes = new ArrayList<>();
-        asiaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        asiaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        asiaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        asiaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        asiaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
+        asiaLakes.add(new NaturalDestination("Mar Caspio", "n/a"));
+        asiaLakes.add(new NaturalDestination("Baikal", "n/a"));
+        asiaLakes.add(new NaturalDestination("Baljash", "n/a"));
+        asiaLakes.add(new NaturalDestination("Kara Bogaz Gol", "n/a"));
 
         List<NaturalDestination> asiaVolcanoes = new ArrayList<>();
-        asiaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        asiaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        asiaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        asiaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        asiaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
+        asiaVolcanoes.add(new NaturalDestination("Karangetang", "n/a"));
+        asiaVolcanoes.add(new NaturalDestination("Merapi", "n/a"));
+        asiaVolcanoes.add(new NaturalDestination("Pinatubo", "n/a"));
+        asiaVolcanoes.add(new NaturalDestination("Taal", "n/a"));
 
         asia.setCountries(asiaCountries);
         asia.setRivers(asiaRivers);
@@ -307,34 +295,32 @@ public class ContinentsActivity extends AppCompatActivity implements ContinentsL
         oceania.setImage("https://www.todaaustralia.com/wp-content/uploads/2018/07/sidney-sydney-australia-1170x658.jpg");
 
         List<Country> oceaniaCountries = new ArrayList<>();
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
-        oceaniaCountries.add(new Country("El Salvador", "San Salvador"));
+        oceaniaCountries.add(new Country("AUSTRALIA", "CANBERRA"));
+        oceaniaCountries.add(new Country("FIYI","SUVA"));
+        oceaniaCountries.add(new Country("KIRIBATI","TARAWA"));
+        oceaniaCountries.add(new Country("ISLAS MARSHALL","MAJURO"));
+        oceaniaCountries.add(new Country("MICRONESIA", "PALIKIR"));
+        oceaniaCountries.add(new Country("NAURU","YAREN"));
+        oceaniaCountries.add(new Country("NAURU","YAREN"));
 
         List<NaturalDestination> oceaniaRivers = new ArrayList<>();
-        oceaniaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        oceaniaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        oceaniaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        oceaniaRivers.add(new NaturalDestination("Lempa", "n/a"));
-        oceaniaRivers.add(new NaturalDestination("Lempa", "n/a"));
+        oceaniaRivers.add(new NaturalDestination("Murray", "n/a"));
+        oceaniaRivers.add(new NaturalDestination("Darling", "n/a"));
+        oceaniaRivers.add(new NaturalDestination("Waikato", "n/a"));
+        oceaniaRivers.add(new NaturalDestination("Clutha", "n/a"));
 
         List<NaturalDestination> oceaniaLakes = new ArrayList<>();
-        oceaniaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        oceaniaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        oceaniaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
-        oceaniaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
+        oceaniaLakes.add(new NaturalDestination("Eyre", "n/a"));
+        oceaniaLakes.add(new NaturalDestination("Torrens", "n/a"));
+        oceaniaLakes.add(new NaturalDestination("Gairdner", "n/a"));
+        oceaniaLakes.add(new NaturalDestination("Mackay", "n/a"));
         oceaniaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
 
         List<NaturalDestination> oceaniaVolcanoes = new ArrayList<>();
-        oceaniaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        oceaniaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        oceaniaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        oceaniaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
-        oceaniaVolcanoes.add(new NaturalDestination("Chaparrastique", "n/a"));
+        oceaniaVolcanoes.add(new NaturalDestination("Monte Taranaki", "n/a"));
+        oceaniaVolcanoes.add(new NaturalDestination("Monte Ngauruhoe", "n/a"));
+        oceaniaVolcanoes.add(new NaturalDestination("North Head", "n/a"));
+        oceaniaVolcanoes.add(new NaturalDestination("Garbuna Grupo", "n/a"));
 
         oceania.setCountries(oceaniaCountries);
         oceania.setRivers(oceaniaRivers);
