@@ -10,4 +10,12 @@ public class NaturalDestination implements Serializable {
         this.name = name;
         this.image = image;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 }
