@@ -18,47 +18,58 @@
         app:layout_constraintTop_toTopOf="parent"
         app:navigationIcon="@drawable/ic_baseline_arrow_back_ios_24" />
 
-    <androidx.recyclerview.widget.RecyclerView
-
-        android:id="@+id/list_button_rc"
-        android:layout_width="413dp"
-        android:layout_height="370dp"
-        android:layout_marginBottom="324dp"
-        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toolbar_continents"
-        app:layout_constraintVertical_bias="0.0"
-        tools:listitem="@layout/item_radio_chech_button">
+        app:layout_constraintTop_toBottomOf="@+id/toolbar_continents">
 
-    </androidx.recyclerview.widget.RecyclerView>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/txtDest"
-        android:layout_width="136dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="152dp"
-        android:layout_marginBottom="268dp"
-        android:text="Volcanes"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/list_button_rc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="324dp"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_radio_chech_button" />
 
-    <androidx.recyclerview.widget.RecyclerView
+            <TextView
+                android:id="@+id/txtDest"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="Volcanes"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/list_button_rc" />
 
-        android:id="@+id/listNatural"
-        android:layout_width="368dp"
-        android:layout_height="236dp"
-        android:layout_marginBottom="32dp"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:listitem="@layout/item_destination">
-    </androidx.recyclerview.widget.RecyclerView>
-
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/listNatural"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:overScrollMode="never"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDest"
+                tools:itemCount="2"
+                tools:listitem="@layout/item_destination" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
