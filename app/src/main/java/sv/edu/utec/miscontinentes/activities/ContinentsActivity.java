@@ -314,7 +314,6 @@ public class ContinentsActivity extends AppCompatActivity implements ContinentsL
         oceaniaLakes.add(new NaturalDestination("Torrens", "n/a"));
         oceaniaLakes.add(new NaturalDestination("Gairdner", "n/a"));
         oceaniaLakes.add(new NaturalDestination("Mackay", "n/a"));
-        oceaniaLakes.add(new NaturalDestination("Coatepeque", "n/a"));
 
         List<NaturalDestination> oceaniaVolcanoes = new ArrayList<>();
         oceaniaVolcanoes.add(new NaturalDestination("Monte Taranaki", "n/a"));
