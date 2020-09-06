@@ -62,12 +62,12 @@ public class ContinentInfoActivity extends AppCompatActivity implements CountryL
     }
 
     @Override
-    public void selectCountry(Country country){
+    public void selectCountry(Country country, int cantida){
         selectedCountryt = country;
-        showToast("Seleccionaste el Pais: "+country.getName() +" Su Capital es: "+ country.getCapital());
+        showToast("Seleccionaste "+ cantida + " Elemetos");
     }
 
     public void showToast(String message) {
-        Toast.makeText(ContinentInfoActivity.this, message, Toast.LENGTH_SHORT).show();
+        Toast.makeText(ContinentInfoActivity.this, message, Toast.LENGTH_SHORT-30).show();
     }
 }

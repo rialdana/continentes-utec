@@ -1,7 +1,9 @@
 package sv.edu.utec.miscontinentes.adapters;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.RadioButton;
@@ -22,7 +24,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
     private CountryListener listener;
     private int select;
     private int lastSelectedPosition = -1;
-    private boolean mAreCheckboxesVisible = false;
+    public int countarCheck =0;
 
 
     public CountryAdapter(List<Country> Country, CountryListener listener, int slcb) {
@@ -42,7 +44,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
 
 
     @Override
-    public void onBindViewHolder(@NonNull CountryAdapter.ContryViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final CountryAdapter.ContryViewHolder holder, int position) {
         holder.bindData(contry.get(position), listener);
         holder.selectionStateR.setChecked(lastSelectedPosition == position);
         holder.capital.setVisibility(holder.selectionStateR.isChecked() ? View.VISIBLE : View.GONE);
@@ -59,6 +61,8 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
         public TextView capital;
         public CheckBox selectionStateC;
         public RadioButton selectionStateR;
+
+
 
         public ContryViewHolder(@NonNull View itemView) {
             super(itemView);
@@ -83,29 +87,30 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
             nombre.setText(contry.getName());
             capital.setText("Capital: "+contry.getCapital());
 
-            selectionStateR.setOnClickListener(new View.OnClickListener() {
+            selectionStateR.setOnClickListener(new OnClickListener() {
 
                 @Override
                 public void onClick(View view) {
-                    listener.selectCountry(contry);
-
-
+                //    listener.selectCountry(contry);
                     lastSelectedPosition = getAdapterPosition();
                     notifyDataSetChanged();
-
                 }
 
             });
 
-            selectionStateC.setOnClickListener(new View.OnClickListener() {
+            selectionStateC.setOnClickListener(new OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    listener.selectCountry(contry);
                     if(selectionStateC.isChecked()){
                         capital.setVisibility(view.VISIBLE);
+                        countarCheck++;
                     }else{
                         capital.setVisibility(view.GONE);
+                        countarCheck--;
                     }
+
+
+                    listener.selectCountry(contry, countarCheck);
 
                 }
             });
