@@ -21,8 +21,8 @@
     <androidx.recyclerview.widget.RecyclerView
 
         android:id="@+id/list_button_rc"
-        android:layout_width="393dp"
-        android:layout_height="422dp"
+        android:layout_width="413dp"
+        android:layout_height="370dp"
         android:layout_marginBottom="324dp"
         app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
         app:layout_constraintBottom_toBottomOf="parent"

@@ -22,6 +22,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
     private CountryListener listener;
     private int select;
     private int lastSelectedPosition = -1;
+    private boolean mAreCheckboxesVisible = false;
 
 
     public CountryAdapter(List<Country> Country, CountryListener listener, int slcb) {
@@ -44,6 +45,7 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
     public void onBindViewHolder(@NonNull CountryAdapter.ContryViewHolder holder, int position) {
         holder.bindData(contry.get(position), listener);
         holder.selectionStateR.setChecked(lastSelectedPosition == position);
+        holder.capital.setVisibility(holder.selectionStateR.isChecked() ? View.VISIBLE : View.GONE);
     }
 
     @Override
@@ -89,7 +91,6 @@ public class CountryAdapter extends RecyclerView.Adapter<CountryAdapter.ContryVi
 
 
                     lastSelectedPosition = getAdapterPosition();
-                    capital.setVisibility(view.VISIBLE);
                     notifyDataSetChanged();
 
                 }
